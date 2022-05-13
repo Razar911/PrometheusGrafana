@@ -35,10 +35,10 @@ scrape_configs:
       - targets: ['pushgateway:9091']
 
   - job_name: 'ServerJenkins'
-      scrape_interval: 10s
-      honor_labels: true
-      static_configs:
-        - targets: [ '3.65.137.11:9100' ]
+    scrape_interval: 10s
+    honor_labels: true
+    static_configs:
+      - targets: [ '3.65.137.11:9100' ]
 
 
 alerting:
